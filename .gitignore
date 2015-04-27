@@ -1,0 +1,3 @@
+* ignore compiled stylesheets, post-merge hook on the server will compile these
+library/css/*.css
+library/scss/.sass-cache
