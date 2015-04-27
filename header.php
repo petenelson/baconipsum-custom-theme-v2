@@ -15,6 +15,9 @@
 
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
+<meta name="HandheldFriendly" content="True" />
+<meta name="MobileOptimized" content="320" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title><?php wp_title( '|', true, 'right' ); ?></title>
 <meta name="blitz" content="mu-b9572eaa-3cd823e3-1364253f-dc9957c1" />
 <link rel="apple-touch-icon" href="<?php echo get_bloginfo('template_url') ?>/images/apple-touch-icon.png" />
