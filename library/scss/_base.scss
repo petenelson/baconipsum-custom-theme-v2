@@ -57,6 +57,11 @@ a img {
 	border: none;
 }
 
+img {
+  height: auto;
+  max-width: 100%;
+}
+
 /* =Layout
 -------------------------------------------------------------- */
 
@@ -71,7 +76,7 @@ DESCRIPTION: Two-column fixed layout with one sidebar right of content
 	width: 100%;
 }
 #content {
-	margin: 0 20px 0 20px;
+	margin: 0 ;
 }
 #primary,
 #secondary {
@@ -96,7 +101,7 @@ DESCRIPTION: One centered column with no sidebar
 
 .one-column #content {
 	margin: 0 auto;
-	width: 640px;
+	width: 100%;
 }
 
 /*
@@ -106,12 +111,12 @@ DESCRIPTION: Full width content with no sidebar; used for attachment pages
 
 .single-attachment #content {
 	margin: 0 auto;
-	width: 900px;
+	width: 100%;
 }
 
 .single-post #content
 {
-	width: 620px;
+	width: 100%;
 }
 
 
@@ -174,12 +179,13 @@ div.menu,
 #main,
 #wrapper {
 	margin: 0 auto;
-	width: 940px;
+	max-width: 940px;
+	width: 100%;
 }
 #wrapper {
 	background: #fff;
-	margin-top: 20px;
-	padding: 0 20px;
+	margin-top: 1em;
+	padding: 0 1em;
 }
 
 /* Structure the footer area */
@@ -198,10 +204,11 @@ div.menu,
 	float: left;
 	font-size: 14px;
 	font-weight: bold;
-	width: 700px;
+	width: 100%;
 }
 #site-generator {
 	float: right;
+	margin-top: 0.5em;
 	width: 220px;
 }
 
@@ -344,14 +351,14 @@ a:hover {
 -------------------------------------------------------------- */
 
 #header {
-	padding: 30px 0 0 0;
+	padding: 1em 0 0 0;
 }
 #site-title {
 	float: left;
 	font-size: 30px;
 	line-height: 36px;
 	margin: 0 0 18px 0;
-	width: 700px;
+	width: 100%;
 }
 #site-title a {
 	color: #000;
@@ -363,7 +370,7 @@ a:hover {
 	float: right;
 	font-style: italic;
 	margin: 15px 0 18px 0;
-	width: 220px;
+	width: 100%;
 }
 
 /* This is the custom header image */
@@ -383,13 +390,14 @@ a:hover {
 	display: block;
 	float: left;
 	margin: 0 auto;
-	width: 940px;
+	max-width: 940px;
+	width: 100%;
 }
 #access .menu-header,
 div.menu {
-	font-size: 13px;
-	margin-left: 12px;
-	width: 928px;
+	font-size: 1em;
+	margin-left: 0.5em;
+	width: 100%;
 }
 #access .menu-header ul,
 div.menu ul {
@@ -463,10 +471,10 @@ div.menu li {
 #main {
 	clear: both;
 	overflow: hidden;
-	padding: 40px 0 0 0;
+	padding: 4em 0 0 0;
 }
 #content {
-	margin-bottom: 36px;
+	margin-bottom: 3em;
 }
 #content,
 #content input,
@@ -531,7 +539,7 @@ div.menu li {
 }
 #content tr td {
 	border-top: 1px solid #e7e7e7;
-	padding: 6px 24px;
+	padding: 4px;
 }
 #content tr.odd td {
 	background: #f2f7fc;
@@ -551,7 +559,7 @@ form#make-it-meaty td
 }
 
 .hentry {
-	margin: 0 0 48px 0;
+	margin: 0 0 4em 0;
 }
 .home .sticky {
 	background: #f2f7fc;
@@ -1236,7 +1244,7 @@ h3#reply-title {
 -------------------------------------------------------------- */
 
 #footer {
-	margin-bottom: 20px;
+	margin-bottom: 2em;
 }
 #colophon {
 	border-top: 4px solid #000;
@@ -1408,3 +1416,22 @@ div.post
 	padding: 0px 10px;
 }
 
+#content {
+	overflow: hidden;
+}
+
+#container {
+	float: left;
+	width: 100%;
+	margin: 0;
+}
+
+#primary {
+	float: left;
+	width: 100%;
+}
+
+
+div.post {
+	width: 100%;
+}

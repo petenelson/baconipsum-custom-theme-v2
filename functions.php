@@ -7,7 +7,7 @@ function baconipsum_enqueue_scripts() {
 	wp_enqueue_script( 'jquery' ) ;
 
 	// TODO update this with scss path
-	wp_enqueue_style( 'baconipsum-style', get_bloginfo( 'template_url' ) . '/style-min-2012-08-20-01.css', array(), BACON_IPSUM_THEME_VERSION );
+	wp_enqueue_style( 'baconipsum-style', get_bloginfo( 'template_url' ) . '/library/css/style.css', array(), BACON_IPSUM_THEME_VERSION );
 }
 
 
