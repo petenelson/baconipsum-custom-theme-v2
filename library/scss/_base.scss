@@ -111,12 +111,12 @@ DESCRIPTION: Full width content with no sidebar; used for attachment pages
 
 .single-attachment #content {
 	margin: 0 auto;
-	width: 100%;
+	width: initial;
 }
 
 .single-post #content
 {
-	width: 100%;
+	width: initial;
 }
 
 
@@ -1435,3 +1435,4 @@ div.post
 div.post {
 	width: 100%;
 }
+
