@@ -1,6 +1,6 @@
 <?php
 
-define( 'BACON_IPSUM_THEME_VERSION', '2015-04-27-03' );
+define( 'BACON_IPSUM_THEME_VERSION', '2015-06-04-02' );
 
 add_action( 'wp_enqueue_scripts', 'baconipsum_enqueue_scripts' );
 function baconipsum_enqueue_scripts() {

@@ -436,10 +436,9 @@ div.menu li {
 	top: 0;
 }
 #access ul ul a {
-	background: #333;
+	background: #450203;
 	line-height: 1em;
 	padding: 10px;
-	width: 160px;
 	height: auto;
 }
 #access li:hover > a,
@@ -1434,5 +1433,9 @@ div.post
 
 div.post {
 	width: 100%;
+}
+
+#access ul {
+	overflow: initial;
 }
 
