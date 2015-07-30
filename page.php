@@ -26,6 +26,9 @@ get_header(); ?>
 			?>
 
 			</div><!-- #content -->
+
+			<script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?zoneid=1696&serve=CVYD42T&placement=baconipsumcom" id="_carbonads_js"></script>
+			
 		</div><!-- #container -->
 
 <?php
