@@ -14,23 +14,12 @@
 
 get_header(); ?>
 
-		<div id="container">
-			<div id="content" role="main">
-
-			<?php
-			/* Run the loop to output the page.
-			 * If you want to overload this in a child theme then include a file
-			 * called loop-page.php and that will be used instead.
-			 */
-			get_template_part( 'loop', 'page' );
-			?>
-
-			</div><!-- #content -->
-
-			<script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?zoneid=1696&serve=CVYD42T&placement=baconipsumcom" id="_carbonads_js"></script>
-			
-		</div><!-- #container -->
+	<div id="container">
+		<div id="content" role="main">
+			<?php get_template_part( 'loop', 'page' ); ?>
+		</div><!-- #content -->
+	</div><!-- #container -->
 
 <?php
-//get_sidebar();
+get_sidebar();
 get_footer();

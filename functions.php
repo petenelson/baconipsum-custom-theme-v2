@@ -1,6 +1,6 @@
 <?php
 
-define( 'BACON_IPSUM_THEME_VERSION', '2015-06-04-02' );
+define( 'BACON_IPSUM_THEME_VERSION', '2015-07-30-01' );
 
 add_action( 'wp_enqueue_scripts', 'baconipsum_enqueue_scripts' );
 function baconipsum_enqueue_scripts() {
@@ -58,6 +58,14 @@ function bacon_ipsum_jquery_bacon_button() {
 
 	<?php
 }
+
+// hide widget titles if they start with !
+add_filter( 'widget_title', function( $title ) {
+	if ( 0 === stripos($title, '!') ) {
+		$title = '';
+	}
+	return $title;
+} );
 
 
 
@@ -449,6 +457,17 @@ function twentyten_widgets_init() {
 			'name' => __( 'Secondary Widget Area', 'twentyten' ),
 			'id' => 'secondary-widget-area',
 			'description' => __( 'The secondary widget area', 'twentyten' ),
+			'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
+			'after_widget' => '</li>',
+			'before_title' => '<h3 class="widget-title">',
+			'after_title' => '</h3>',
+		) );
+
+	// sidebar used on single pages
+	register_sidebar( array(
+			'name' => __( 'Page Widgets', 'twentyten' ),
+			'id' => 'page-widget-area',
+			'description' => __( 'The page widget area', 'twentyten' ),
 			'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
 			'after_widget' => '</li>',
 			'before_title' => '<h3 class="widget-title">',
