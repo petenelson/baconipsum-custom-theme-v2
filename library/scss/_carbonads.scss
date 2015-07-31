@@ -1,0 +1,25 @@
+#carbonads {
+
+	text-align: center;
+	max-width: 250px;
+	margin: 0 auto;
+
+	.carbon-img {
+		display: block;
+	}
+
+	.carbon-poweredby {
+		display: block;
+		margin: 4px 0 0 0;
+	}
+
+	a,
+	a:visited {
+		color: #0066cc;
+	}
+
+	a:hover {
+		color: #ff4b33;
+	}
+
+}

@@ -622,7 +622,7 @@ form#make-it-meaty td
 .entry-content,
 .entry-summary {
 	clear: both;
-	padding: 12px 0 0 0;
+	padding: 0 0 0 0;
 }
 #content .entry-summary p:last-child {
 	margin-bottom: 12px;
@@ -1439,3 +1439,18 @@ div.post {
 	overflow: initial;
 }
 
+#content {
+	.anyipsum-table {
+		border: none;
+		td {
+			border: none;
+			padding: 0;
+		}
+		label {
+			margin-right: 10px;
+		}
+		input {
+			margin-right: 4px;
+		}
+	}
+}
