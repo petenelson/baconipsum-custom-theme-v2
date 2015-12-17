@@ -1,6 +1,6 @@
 <?php
 
-define( 'BACON_IPSUM_THEME_VERSION', '2015-07-30-01' );
+define( 'BACON_IPSUM_THEME_VERSION', '2015-12-17-01' );
 
 add_action( 'wp_enqueue_scripts', 'baconipsum_enqueue_scripts' );
 function baconipsum_enqueue_scripts() {
@@ -8,6 +8,10 @@ function baconipsum_enqueue_scripts() {
 
 	// TODO update this with scss path
 	wp_enqueue_style( 'baconipsum-style', get_bloginfo( 'template_url' ) . '/library/css/style.css', array(), BACON_IPSUM_THEME_VERSION );
+
+	if ( is_front_page() && ! empty( $_GET['type'] ) ) {
+		wp_enqueue_style( 'baconipsum-style-star-wars', get_bloginfo( 'template_url' ) . '/library/css/star-wars-crawl.css', array(), BACON_IPSUM_THEME_VERSION );
+	}
 }
 
 
