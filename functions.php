@@ -10,7 +10,7 @@ function baconipsum_enqueue_scripts() {
 	wp_enqueue_style( 'baconipsum-style', get_bloginfo( 'template_url' ) . '/library/css/style.css', array(), BACON_IPSUM_THEME_VERSION );
 
 	if ( is_front_page() && ! empty( $_GET['type'] ) ) {
-		wp_enqueue_style( 'baconipsum-style-star-wars', get_bloginfo( 'template_url' ) . '/library/css/star-wars-crawl.css', array(), BACON_IPSUM_THEME_VERSION );
+		wp_enqueue_style( 'baconipsum-style-star-wars', get_bloginfo( 'template_url' ) . '/library/star-wars-crawl.css', array(), BACON_IPSUM_THEME_VERSION );
 	}
 }
 

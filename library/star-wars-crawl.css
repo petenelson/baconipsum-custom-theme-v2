@@ -1,0 +1,61 @@
+/* http://www.sitepoint.com/css3-starwars-scrolling-text/ */
+
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700);
+
+body,
+#wrapper {
+	background: #000;
+}
+
+.anyipsum-output
+{
+	line-height: 1em;
+	font-family: "Droid Sans", arial, verdana, sans-serif;
+	color: #ff6;
+	position: absolute;
+	width: 18em;
+	height: 50em;
+	bottom: 100px;
+	left: 50%;
+	margin-left: -9em;
+	font-size: 350%;
+	text-align: justify;
+	overflow: hidden;
+	transform-origin: 50% 100%;
+	transform: perspective(300px) rotateX(25deg);
+}
+
+#content p {
+	margin-bottom: 1.5em;
+}
+
+.anyipsum-output:after
+{
+	position: absolute;
+	content: ' ';
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 60%;
+	background-image: linear-gradient(top, rgba(0,0,0,1) 0%, transparent 100%);
+	pointer-events: none;
+}
+
+.anyipsum-output-content
+{
+	position: absolute;
+	top: 100%;
+	animation: scroll 100s linear 4s infinite;
+}
+
+.anyipsum-form-header,
+.anyipsum-form, #primary, #footer {
+
+	display: none;
+}
+
+@keyframes scroll {
+	0% { top: 100%; }
+	100% { top: -170%; }
+}
+
