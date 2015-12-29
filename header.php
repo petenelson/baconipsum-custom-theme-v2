@@ -49,7 +49,7 @@
 				<?php $heading_tag = ( is_home() || is_front_page() ) ? 'h1' : 'div'; ?>
 				<?php
 					if ( get_header_image() ) : ?>
-						<img src="<?php echo get_bloginfo('template_url') ?>/images/bacon-ipsum-ugly-sweater.jpg" width="<?php echo HEADER_IMAGE_WIDTH; ?>" height="<?php echo HEADER_IMAGE_HEIGHT; ?>" alt="" />
+						<img src="<?php echo get_bloginfo('template_url') ?>/images/bacon-ipsum-banner1.jpg" width="<?php echo HEADER_IMAGE_WIDTH; ?>" height="<?php echo HEADER_IMAGE_HEIGHT; ?>" alt="" />
 					<?php endif; ?>
 			</div><!-- #branding -->
 
