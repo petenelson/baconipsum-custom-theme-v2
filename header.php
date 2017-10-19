@@ -16,6 +16,7 @@
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <meta name="HandheldFriendly" content="True" />
+<meta property="fb:pages" content="280638025309360" />
 <meta name="MobileOptimized" content="320" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title><?php wp_title( '|', true, 'right' ); ?></title>
