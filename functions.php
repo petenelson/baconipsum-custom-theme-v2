@@ -1,6 +1,6 @@
 <?php
 
-define( 'BACON_IPSUM_THEME_VERSION', '2015-12-21-01' );
+define( 'BACON_IPSUM_THEME_VERSION', '2017-10-24-01' );
 
 add_action( 'wp_enqueue_scripts', 'baconipsum_enqueue_scripts' );
 function baconipsum_enqueue_scripts() {
@@ -175,7 +175,7 @@ if ( ! function_exists( 'twentyten_setup' ) ):
 			) );
 
 		// This theme allows users to set a custom background
-		add_custom_background();
+		add_theme_support( 'custom-background' );
 
 		// Your changeable header business starts here
 		if ( ! defined( 'HEADER_TEXTCOLOR' ) )
@@ -201,7 +201,7 @@ if ( ! function_exists( 'twentyten_setup' ) ):
 
 		// Add a way for the custom header to be styled in the admin panel that controls
 		// custom headers. See twentyten_admin_header_style(), below.
-		add_custom_image_header( '', 'twentyten_admin_header_style' );
+		add_theme_support( 'custom-header' );
 
 		// ... and thus ends the changeable header business.
 
